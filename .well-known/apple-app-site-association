@@ -1,13 +1,16 @@
 {
-  "applinks": {
-    "apps": [],
-    "details": [
-      {
-        "appID": "8U79ANKR9G.com.delantegroup.cherry",
-        "paths": [
-          "*"
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "8U79ANKR9G.com.delantegroup.cherry",
+                "components": [
+                    {
+                        "/": "/share/*",
+                        "comment": "Matches any URL whose path starts with /share/"
+                    }
+                ]
+            }
         ]
-      }
-    ]
-  }
+    }
 }
