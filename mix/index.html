@@ -1,13 +1,12 @@
 <html>
     <body>
-        <span id="birthdate"></span>
+        <span id="id"></span>
     </body>
 </html>
 
 <script>
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    const birthdate = urlParams.get('birthdate');
-    const pdflink = urlParams.get('pdflink');
-    document.getElementById("birthdate").innerHTML = birthdate;
+    const id = urlParams.get('id');
+    document.getElementById("id").innerHTML = id;
 </script>
