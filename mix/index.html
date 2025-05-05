@@ -1,7 +1,68 @@
-<html>
-    <body>
-        <span id="id"></span>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top Fifth Content with Button</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(to bottom, white, #7E1D54);
+      font-family: sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: center;
+    }
+
+    .content {
+      margin-top: calc(100vh / 5 - 40px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    img {
+      width: min(80vw, 600px);
+      height: auto;
+    }
+
+	.download-button {
+      width: min(80vw, 600px);
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 1.5rem; /* Increased font size */
+      cursor: pointer;
+      margin-bottom: 15px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s;
+    }
+
+    .download-button:hover {
+      background-color: #222;
+    }
+
+    h4 {
+      margin-top: 20px;
+      width: min(80vw, 600px);
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <img src="cherry_logo.png" alt="A small image">
+    <button class="download-button">Download the Cherry Music App</button>
+    <h4>If you're opening a shared mix, you may need to re-click the link after installing the app for the mix to appear inside the app.</h4>
+  </div>
+
+</body>
 </html>
 
 <script>
