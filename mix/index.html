@@ -58,7 +58,7 @@
 
   <div class="content">
     <img src="cherry_logo.png" alt="A small image">
-    <button class="download-button">Download the Cherry Music App</button>
+	<button class="download-button" onclick="downloadApp()">Download the Cherry Music App</button>
     <h4>If you're opening a shared mix, you may need to re-click the link after installing the app for the mix to appear inside the app.</h4>
   </div>
 
@@ -70,4 +70,9 @@
     const urlParams = new URLSearchParams(queryString);
     const id = urlParams.get('id');
     document.getElementById("id").innerHTML = id;
+    
+    function downloadApp() {
+      // Redirect to the app's download page (you can change the URL)
+      window.location.href = "https://google.com";  // Replace with actual download URL
+    }
 </script>
